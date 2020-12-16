@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "stylesheet.css" 
+   </link>
+    <a href="https://ictcrowd.github.io/uhi-assessment/timestable-home.html"><buttonhome onclick="myFunction()">home</button></a>
+    
+ 
+</head>
+<body onload="answerChecker()";
+   
+</script>
+  
+ 
+ <!--logo header-->
+<div class="header">
+  <br>
+  <img src="2x-test-logo.png" alt="2 times table logo" class="center">
+</div>
+  </h1>
+  <br>
+   test your knowledge with this quiz:
+  <hr>
+
+<div>
+<p id="question"></p>
+<!--THIS IS ALL WORKING EXCEPT I CAN'T INPUT MY ANSWER BEFORE IT'S CHECKED IT!!!-->
+<p>what is 2x<span id="multiple"></span>?</p>  <input id="userAnswer" type="number">
+  <button type="submit" id="answerChecker">submit</button>
+<br>
+<br>
+</div>
+
+<hr>
+</div>
+<p>your score:
+<div id="score">score</div><!--displays score-->
+<br>
+<p>answer feedback:</p>
+<div id="feedback">Ready</div><!--displays feedback-->
+<br>
+<p>the correct answer is:</p>
+<div id="correct">blank</div><!--displays correct asnwer-->
+
+<div><!--variable section-->
+   <script>  
+var score = 0;
+document.getElementById("answerChecker").onclick = function() {
+
+//user input variable, correct answer(random) variable
+  var userAnswer = document.getElementById("userAnswer").value;
+    var randomMultiple = document.getElementById("multiple").innerHTML =
+Math.floor(Math.random() * 10) + 1;
+var correctAnswer = randomMultiple*2;
+
+
+//checks user input against correct answer
+  if (userAnswer == (correctAnswer)) {
+  {document.getElementById("feedback").innerHTML = "correct";}
+    score++;
+  } else {
+   document.getElementById("feedback").innerHTML = "incorrect";
+  }
+  //updates score, feedback and the correct answer
+ document.getElementById("score").innerHTML = score;
+ document.getElementById("correct").innerHTML = correctAnswer;
+}
+</script>
+</div>
+</body>
