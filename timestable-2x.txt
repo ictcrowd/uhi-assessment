@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <!--loads css-->
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "stylesheet.css" />
+</head>
+<body>
+  <!--test and home buttons-->
+  <a href="https://trinket.io/library/trinkets/45a21f9286"><buttonhome onclick="myFunction()">home</button></a>;
+  <a href="https://trinket.io/library/trinkets/416862ee93"><buttontest onclick="myFunction()">test yourself</buttontest></a>;
+
+<!--logo header-->
+<div class="header">
+  <img src="2xtable-logo.png" alt="2 times table logo" class="center">
+</div>
+  </h1>
+  <br>
+<hr>
+<br>
+    select a calculation below to view the multiples and factors of that calculaiton
+   <!--table to hold buttons-->
+   <table style="width:100%">
+  <tr>
+    <th><a href= "https://ictcrowd1-gmail-com.trinket.io/sites/2-x-1"><button onclick="myFunction()">2x1</button>
+
+    <tr>
+    <th><p><button onclick="myFunction()">2x2</button>
+
+    <tr>
+    <th><p><button onclick="myFunction()">2x3</button>
+
+  <tr>
+    <th><p><button onclick="myFunction()">2x4</button>
+
+  <tr>
+    <th><p><button onclick="myFunction()">2x5</button>
+ 
+  <tr>
+    <th><p><button onclick="myFunction()">2x6</button>
+
+  <tr>
+    <th><p><button onclick="myFunction()">2x7</button>
+
+  <tr>
+    <th><p><button onclick="myFunction()">2x8</button>
+
+    <tr>
+    <th><p><button onclick="myFunction()">2x9</button>
+
+    <tr>
+    <th><p><button10 onclick="myFunction()">2x10</button10>
+</tr>
+
+</table>
+</body>

@@ -1,0 +1,102 @@
+/* stylesheet.css */
+body {background: white}
+        h1 {text-align: center; font-family: consolas}
+         p {color: black;  font-family: consolas
+         }
+   .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+         
+button {
+  border-radius: 8px;
+  background-color: blue;
+  font-family: consolas;
+  border: white;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button:hover{
+     background: red;}
+     
+button10 {
+  border-radius: 8px;
+  background-color: blue;
+  font-family: consolas;
+  border: white;
+  color: white;
+  padding: 5px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button10:hover{
+     background: red;
+}
+buttonsearch {
+  border-radius: 8px;
+  background-color: green;
+  font-family: consolas;
+  border: white;
+  color: white;
+  padding: 5px 17px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+buttonsearch:hover{
+     background: red;}
+     buttonhome {
+  border-radius: 8px;
+   position:absolute;
+  top:0;
+  right:0;
+  background-color: red;
+   font-family: consolas;
+  border: white;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+buttonhome:hover{
+     background: green;}
+     
+     buttontest {
+  border-radius: 8px;
+   position:absolute;
+  top:0;
+  left:0;
+  background-color: green;
+   font-family: consolas;
+  border: white;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+buttontest:hover{
+     background: red;}
+
