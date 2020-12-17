@@ -44,11 +44,10 @@
   
   <div><!--variable section-->
     <script>  
-       var correctAnswer = document.getElementById("multiple").innerHTML = 2; //this multiplies the random number by 2 to make the correct answer
+      var correctAnswer = document.getElementById("multiple").innerHTML = 2; //this multiplies the random number by 2 to make the correct answer
+      var userAnswer1 = document.getElementById("userAnswer").value;    //gets user input variable, and fetches correct answer array
+      
       function answerChecker() {
-        //gets user input variable, and fetches correct answer array
-        var userAnswer1 = document.getElementById("userAnswer").value;    //do i even need to make this variable or can i check the input value against correctAnswer?
-        
         //checks user input against correct answer
         if (userAnswer1 == 2) {
           {document.getElementById("feedback").innerHTML = "yes";}
