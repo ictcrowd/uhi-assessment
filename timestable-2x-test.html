@@ -22,13 +22,11 @@
 
   <script>//random number generator and correct answer array  
 
-      function randomGenerator()    {              //how do i get the randomMultiple variable out of this                                                                         function to generate correctAnswer???????? 
-
-                                    var randomMultiple =document.getElementById("multiple").innerHTML = 
-
-         (Math.floor(Math.random() * 10) + 1);      //this creates random number between 1 and 10: the multiple 
-
-                                                            } 
+      function randomGenerator() //how do i get the randomMultiple variable out of this function to generate correctAnswer???????? 
+    {
+        var randomMultiple =document.getElementById("multiple").innerHTML = 
+            (Math.floor(Math.random() * 10) + 1);      //this creates random number between 1 and 10: the multiple 
+      } 
 
   </script>  
 
@@ -37,107 +35,69 @@
   <!--logo header--> 
 
   <div class="header"> 
+    <br> 
 
-             <br> 
-
-            <img src="2x-test-logo.png" alt="2 times table logo" class="center"> 
+    <img src="2x-test-logo.png" alt="2 times table logo" class="center"> 
 
   </div> 
-
+  
   <br> 
-
-<p> test your knowledge with this quiz:</p> 
+  <p> test your knowledge with this quiz:</p> 
 
   <hr> 
-
   
-
   <p id="question"></p> 
-
   <p>what is 2x<span id="multiple"></span>?</p>  <!--displays question and randomMultiple--> 
 
-  	<script> 
-
-var userAnswer1 = document.getElementById("userAnswer").value;   
-
-</script> 
+  <script> 
+    var userAnswer1 = document.getElementById("userAnswer").value;   
+  </script> 
 
   <input id="userAnswer" type="number"> <!--gets user input--> 
-
- 
-
-  	  <button type="submit" id="answerChecker">submit</button> <!--activates check answer function--> 
-
-   
-
+  
+  <button type="submit" id="answerChecker">submit</button> <!--activates check answer function--> 
+  
   <button onclick="randomGenerator()">new question</button> <!--generates new question--> 
 
   <br> 
 
   <br> 
+  
+  <hr> 
 
-   
+  <div> <!--displays--> 
 
-<hr> 
-
-<div> <!--displays--> 
-
-  <p>correct: </p> <br> 
-
-<p  id="feedback" > </p> 
-
-   
-
-  <br> 
-
-   
-
-  <p>the answer is:</p><!--displays correct answer for testing--> 
-
-  <script> 
-
-    <p  id="correctAnswer" > </p> 
-
- 
-
-  </script> 
-
-</div> 
+    <p>correct: </p> <br> 
+    <p  id="feedback" > </p> 
+    
+    <br> 
+    
+    <p>the answer is:</p><!--displays correct answer for testing--> 
+    
+    <script> 
+      <p  id="correctAnswer" > </p> 
+    </script> 
+    
+  </div> 
 
    
 
   <div><!--variable section--> 
-
+    
     <script>   
-
       var correctAnswer1 = randomMultiple*2; //this multiplies the random number by 2 to make the correct answer 
-
-         
-
-       
-
-      function answerChecker() { 
-
-        //checks user input against correct answer 
-
-        if (userAnswer1 = correctAnswer1) { 
-
-        document.getElementById("feedback").innerHTML = "yes"; 
-
-         } 
-
-document.getElementById("feedback").innerHTML = "no"; 
-
-}            
-
+      
+      function answerChecker() {       //checks user input against correct answer 
+        if (userAnswer1 = correctAnswer1) {
+          document.getElementById("feedback").innerHTML = "yes"; 
+        } else{
+          document.getElementById("feedback").innerHTML = "no";
+        }            
     </script> 
-
+  
   </div> 
 
-  
-
 </body> 
-
 </html> 
 
  
