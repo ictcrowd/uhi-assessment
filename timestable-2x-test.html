@@ -1,104 +1,220 @@
-<!DOCTYPE html> 
-
-<head> 
-
-  <link rel = "stylesheet" 
-
-        type = "text/css" 
-
-        href = "stylesheet.css"  
-
-  </link> 
-
-<a href="https://ictcrowd.github.io/uhi-assessment/timestable-home.html"><buttonhome onclick="myFunction()">home</button></a> 
+<!DOCTYPE html>  
 
   
 
-</head> 
+<head>  
+
+  
+
+  <link rel = "stylesheet"  
+
+  
+
+        type = "text/css"  
+
+  
+
+        href = "stylesheet.css"   
+
+  
+
+  </link>  
+
+  
+
+<a href="https://ictcrowd.github.io/uhi-assessment/timestable-home.html"><buttonhome onclick="myFunction()">home</button></a>  
+
+  
 
    
 
-<body onload="randomGenerator()"; "question()";> 
+  
 
-  <script>//random number generator and correct answer array  
+</head>  
 
-      function randomGenerator() //how do i get the randomMultiple variable out of this function to generate correctAnswer???????? 
-    {
-        var randomMultiple =document.getElementById("multiple").innerHTML = 
-            (Math.floor(Math.random() * 10) + 1);      //this creates random number between 1 and 10: the multiple 
-      } 
+  
+
+    
+
+  
+
+<body onload="randomGenerator()"; "question()";>  
+
+  
+
+  <script>//random number generator and correct answer array   
+
+  
+
+      function randomGenerator() //how do i get the randomMultiple variable out of this function to                  generate correctAnswer????????  
+
+    { 
+
+        var randomMultiple =document.getElementById("multiple").innerHTML =  
+
+            (Math.floor(Math.random() * 10) + 1);      //this creates random number between 1 and 10:                     the multiple  
+
+      }  
+
+  
+
+  </script>   
+
+  
+
+    
+
+  
+
+  <!--logo header-->  
+
+  
+
+  <div class="header">  
+
+    <br>  
+
+  
+
+    <img src="2x-test-logo.png" alt="2 times table logo" class="center">  
+
+  
+
+  </div>  
+
+   
+
+  <br>  
+
+  <p> test your knowledge with this quiz:</p>  
+
+  
+
+  <hr>  
+
+   
+
+  <p id="question"></p>  
+
+  <p>what is 2x<span id="multiple"></span>?</p>  <!--displays question and randomMultiple-->  
+
+  
+
+  <script>  
+
+    
 
   </script>  
 
-   
-
-  <!--logo header--> 
-
-  <div class="header"> 
-    <br> 
-
-    <img src="2x-test-logo.png" alt="2 times table logo" class="center"> 
-
-  </div> 
   
-  <br> 
-  <p> test your knowledge with this quiz:</p> 
 
-  <hr> 
-  
-  <p id="question"></p> 
-  <p>what is 2x<span id="multiple"></span>?</p>  <!--displays question and randomMultiple--> 
-
-  <script> 
-    var userAnswer1 = document.getElementById("userAnswer").value;   
-  </script> 
-
-  <input id="userAnswer" type="number"> <!--gets user input--> 
-  
-  <button type="submit" id="answerChecker">submit</button> <!--activates check answer function--> 
-  
-  <button onclick="randomGenerator()">new question</button> <!--generates new question--> 
-
-  <br> 
-
-  <br> 
-  
-  <hr> 
-
-  <div> <!--displays--> 
-
-    <p>correct: </p> <br> 
-    <p  id="feedback" > </p> 
-    
-    <br> 
-    
-    <p>the answer is:</p><!--displays correct answer for testing--> 
-    
-    <script> 
-      <p  id="correctAnswer" > </p> 
-    </script> 
-    
-  </div> 
+  <input id="userAnswer" type="number"> <!--gets user input-->  
 
    
 
-  <div><!--variable section--> 
-    
-    <script>   
-      var correctAnswer1 = randomMultiple*2; //this multiplies the random number by 2 to make the correct answer 
+  <button type="submit" id="answerChecker">submit</button> <!--activates check answer function-->  
+
+   
+
+  <button onclick="randomGenerator()">new question</button> <!--generates new question-->  
+
+  
+
+  <br>  
+
+  
+
+  <br>  
+
+   
+
+  <hr>  
+
+  
+
+  <div> <!--displays-->  
+
+  
+
+    <p>correct: </p> <br>  
+
+    <p  id="feedback" > </p>  
+
+     
+
+    <br>  
+
+     
+
+    <p>the answer is:</p><!--displays correct answer for testing-->  
+
+     
+
       
-      function answerChecker() {       //checks user input against correct answer 
-        if (userAnswer1 == correctAnswer1) {
-          document.getElementById("feedback").innerHTML = "yes"; 
-        } else {
-          document.getElementById("feedback").innerHTML = "no";
-        }            
-    </script> 
-  
-  </div> 
 
-</body> 
-</html> 
+      <p  id="correctAnswer" > </p>  
+
+    <p id = “test”></p> 
+
+     <p id = “test2”></p> 
+
+     
+
+  </div>  
+
+  
+
+    
+
+  
+
+  <div><!--variable section-->  
+
+     
+
+    <script>    
+
+      var correctAnswer1 = randomMultiple*2; //this multiplies the random number by 2 to make the              correct answer  
+
+document.getElementById(" test ").innerHTML 
+
+        var userAnswer1 = document.getElementById("userAnswer").value;   
+
+document.getElementById(" test2 ").innerHTML 
+
+ 
+
+ 
+
+      function answerChecker() {       //checks user input against correct answer  
+
+        if (userAnswer1 == correctAnswer1) { 
+
+          document.getElementById("feedback").innerHTML = "yes";  
+
+        } else { 
+
+          document.getElementById("feedback").innerHTML = "no"; 
+
+        }             
+
+    </script>  
+
+   
+
+  </div>  
+
+  
+
+</body>  
+
+</html>  
+
+  
+
+  
+
+  
 
  
 
