@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <head>
   <link rel = "stylesheet"
-   type = "text/css"
-   href = "stylesheet.css" 
-   </link>
-    <a href="https://ictcrowd.github.io/uhi-assessment/timestable-home.html"><buttonhome onclick="myFunction()">home</button></a>
-    
- 
+        type = "text/css"
+        href = "stylesheet.css" 
+        </link>
+  <a href="https://ictcrowd.github.io/uhi-assessment/timestable-home.html"><buttonhome onclick="myFunction()">home</button></a>
+
 </head>
 
 
-<script>
 <body onload="randomGenerator()"; <!--make this random number--
-  
+<script>//random number generator and correct answer array 
    function randomGenerator(){
-    var randomMultiple = document.getElementById("multiple").innerHTML =
-(Math.floor(Math.random() * 10) + 1)*2;
-var correctAnswer[randomMultiple];
-}
+     var randomMultiple = document.getElementById("multiple").innerHTML =
+        (Math.floor(Math.random() * 10) + 1);
+     var multiplyMultiple = randomMultiple*2
+     var correctAnswer[multiplyMultiple];
+   }
 </script>
   
  
@@ -31,45 +30,49 @@ var correctAnswer[randomMultiple];
    test your knowledge with this quiz:
   <hr>
 
-<div>
 <p id="question"></p>
-<!--THIS IS ALL WORKING EXCEPT I CAN'T INPUT MY ANSWER BEFORE IT'S CHECKED IT!!!-->
-<p>what is 2x<span id="multiple"></span>?</p>  <input id="userAnswer" type="number">
-  <button type="submit" id="answerChecker">submit</button>
+<p>what is 2x<span id="multiple"></span>?</p>  
+<input id="userAnswer" type="number">
+<button type="submit" id="answerChecker">submit</button>
 <br>
 <br>
-</div>
-
-<hr>
-</div>
-<p>your score:
-<div id="score">score</div><!--displays score-->
-<br>
-<p>answer feedback:</p>
-<div id="feedback">Ready</div><!--displays feedback-->
-<br>
-<p>the correct answer is:</p>
-<div id="correct">blank</div><!--displays correct asnwer-->
 
 <div><!--variable section-->
-   <script>  
-var score = 0;
-function answerChecker() {
+  <script>  
+    var score = 0;
+    function answerChecker() {
 
-//user input variable, correct answer(random) variable
-  var userAnswer = document.getElementById("userAnswer").value;
-var name = correctAnswer[0]
-//checks user input against correct answer
-  if (userAnswer == (correctAnswer)) {
-  {document.getElementById("feedback").innerHTML = "correct";}
-    score++;
-  } else {
-   document.getElementById("feedback").innerHTML = "incorrect";
-  }
-  //updates score, feedback and the correct answer
- document.getElementById("score").innerHTML = score;
- document.getElementById("correct").innerHTML = correctAnswer;
-}
-</script>
+      //gets user input variable, and fetches correct answer array
+      var userAnswer = document.getElementById("userAnswer").value;
+      var correctAnswer = [0]
+ 
+      //checks user input against correct answer
+      if (userAnswer == (correctAnswer)) {
+        {document.getElementById("feedback").innerHTML = "correct";}
+        score++;
+      } else {
+        document.getElementById("feedback").innerHTML = "incorrect";
+      }
+      //updates score, feedback and the correct answer
+      document.getElementById("score").innerHTML = score;
+      document.getElementById("correct").innerHTML = correctAnswer;
+    }
+  </script>
 </div>
+
+
+<hr>
+<div> displays
+  <p>your score:
+  <div id="score">score</div><!--displays score-->
+  <br>
+  <p>answer feedback:</p>
+  <div id="feedback">Ready</div><!--displays feedback-->
+  <br>
+  <p>the correct answer is:</p>
+  <div id="correct">blank</div><!--displays correct asnwer-->
+</div>
+ 
 </body>
+</html>
+
