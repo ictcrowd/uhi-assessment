@@ -3,40 +3,16 @@
   
 
 <head>  
-
   
-
   <link rel = "stylesheet"  
-
-  
-
-        type = "text/css"  
-
-  
-
+        type = "text/css" 
         href = "stylesheet.css"   
-
+        </link>  
   
-
-  </link>  
-
-  
-
-<a href="https://ictcrowd.github.io/uhi-assessment/timestable-home.html"><buttonhome onclick="myFunction()">home</button></a>  
-
-  
-
-   
-
-  
+  <a href="https://ictcrowd.github.io/uhi-assessment/timestable-home.html"><buttonhome onclick="myFunction()">home</button></a>  
 
 </head>  
 
-  
-
-    
-
-  
 
 <body onLoad = "generateRandom()">  
 
@@ -46,39 +22,42 @@
   <br>  
     <img src="2x-test-logo.png" alt="2 times table logo" class="center">  
     
-    </div>  
+  </div>  
     
-    <br>  
+  <br>  
     
-    <p> test your knowledge with this quiz:</p>  
+  <p> test your knowledge with this quiz:</p>  
 
 
 
   <script>//random number
   
   var randomMultiple = 0;
+  var twoMultiple  = 0;
+  
   function generateRandom()//this creates random number between 1 and 10:  
   {
-    randomMultiple = Math.floor(Math.random() * 10) + 1);
-    twoMultiple = 2;
+    randomMultiple = Math.floor(Math.random() * 10) + 1); //this creates random number
+    twoMultiple = 2; //this creates variable to multiply by random number
     
-    document.getElementById("multiple").innerHTML = randomMultiple;
-    document.getElementById("two").innerHTML = twoMultiple;
+    document.getElementById("multiple").innerHTML = randomMultiple; //this displays random number
+    document.getElementById("numberTwo").innerHTML = twoMultiple; //this displays the 2 to multiply random number by
   }
   
   function checkAnswer()
   {
-    answer = document.getElementById("userAnswer").value;
-    if (answer ==(twoMultiple * randomMultiple))
+    answer = document.getElementById("userAnswer").value; //gets user input value
+    if (answer ==(twoMultiple * randomMultiple)) //compares user input to calculated correct number
     {
-      document.getElementById("feedback").innerHTML = "correct";
-      }
+      document.getElementById("feedback").innerHTML = "correct"; //correct message
+    }
       else
-      {
-        document.getElementById("feedback").innerHTML = "incorrect";
-      }
+    {
+      document.getElementById("feedback").innerHTML = "incorrect"; // incorrect message
+    }
   }
-  generateRandom();
+  
+  generateRandom(); // generates new random number
   
   </script>   
 
@@ -86,28 +65,18 @@
 <div id = "question">
   
   <p>What is:</p>
-  <span id = randomMultiple> - </span> x <span id = twoMultiple> - </span> =
+  <span id = numberTwo> - </span> x <span id = multiple> - </span> = <!--displays two multiple variables -->
   <br>
   <br>
-  <input type = "number" id = "userAnswer" name = "number1" />
-  <input type = "button" onClick = "checkAnswer()" value = "check" />
+  <input type = "number" id = "userAnswer" name = "number1" /> <!--gets user input-->
+  <input type = "button" onClick = "checkAnswer()" value = "check" /> <!-- runs function that checks user input against correct answer-->
   <br>
   <br>
-  <span id = "feedback">ready</span>
+  <span id = "feedback">ready</span> <!-- fetches and displays feedback from if statement-->
 
 </div>
-    
 
+  
 </body>  
 
 </html>  
-
-  
-
-  
-
-  
-
- 
-
- 
