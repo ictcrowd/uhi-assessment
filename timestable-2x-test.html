@@ -54,13 +54,13 @@
   
   <div><!--variable section-->
     <script>  
-      var feedback
+      var feedback = " "
       var correctAnswer = 2; //this multiplies the random number by 2 to make the correct answer
       var userAnswer1 = document.getElementById("userAnswer").value;    //gets user input variable, and fetches correct answer array
       
       function answerChecker() {
         //checks user input against correct answer
-        if (userAnswer1 = 2) 
+        if (userAnswer1 = correctAnswer) 
         {document.getElementById("feedback").innerHTML = "yes";} 
         else 
         {document.getElementById("feedback").innerHTML = "no";}
