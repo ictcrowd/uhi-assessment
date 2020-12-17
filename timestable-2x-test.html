@@ -103,19 +103,20 @@
   
 <!--gets user input-->  
 
-<input type="number" id="myNumber" value="2">
+<input type="number" id="userNumber" value="2">
 
 <p>Click the button to get the number of the number field.</p>
 
-<button onclick="userInput()">submit</button>
+<button onclick="userInput()">submitt</button>
 
 
-<p id="userNumber"></p>
+
+<p id="showInput"></p>
 
 <script>
 function userInput() {
-  var x = document.getElementById("myNumber").value;
-  document.getElementById("userNumber").innerHTML = x;
+  var x = document.getElementById("userNumber").value;
+  document.getElementById("showInput").innerHTML = x;
 }
 </script>
 
