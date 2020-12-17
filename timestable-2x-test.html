@@ -38,10 +38,12 @@
   <br>
   
 <hr>
-<div> <!--displays-->
-  <p>correct:</p><br>
+<div> <!--displays--> 
+
+  <p>correct: </p> <br> 
+
+<p  id="feedback" > </p>
   
-  <p  id="feedback" > </p> 
   
   <br>
   
@@ -56,9 +58,10 @@
       var correctAnswer = 2; //this multiplies the random number by 2 to make the correct answer
       var userAnswer1 = document.getElementById("userAnswer").value;    //gets user input variable, and fetches correct answer array
       
-      function answerChecker() {
+      function answerChecker() 
+      {
         //checks user input against correct answer
-        if (userAnswer1 = correctAnswer) 
+        if (userAnswer1 == correctAnswer) 
         {document.getElementById("feedback").innerHTML = "yes";} 
         else 
         {document.getElementById("feedback").innerHTML = "no";}
