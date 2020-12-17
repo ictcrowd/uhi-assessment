@@ -107,12 +107,22 @@
   </script>  
 
   
-
-  <input id="userAnswer" type="number"> <!--gets user input-->  
+<!--gets user input-->  
 
    
 
-  <button type="submit" id="answerChecker">submit</button> <!--activates check answer function-->  
+  <input type="number" id="myNumber" value="2">
+
+<button onclick="userInput()">submit</button>
+
+<p id="userNumber"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myNumber").value;
+  document.getElementById("userNumber").innerHTML = x;
+}
+</script>
 
    
 
@@ -122,33 +132,7 @@
 
   <br>  
 
-   <input type="number" id="userAnswer" value="2"> 
-
   
-
-<p>Click the button to get the number of the number field.</p> 
-
-  
-
-<button onclick="submitAnswer()">Try it</button> 
-
-   
-
-<p id="numberInput"></p> 
-
-  
-
-<script> 
-
-function submitAnswer() { 
-
-  var x = document.getElementById("myNumber").value; 
-
-  document.getElementById("numberInput").innerHTML = x; 
-
-} 
-
-</script> 
 
   <br>  
 
