@@ -8,8 +8,15 @@
     
  
 </head>
-<body onload="answerChecker()";
-   
+
+
+<script>
+<body onload="randomGenerator()"; <!--make this random number-->
+   function randomGenerator(){
+    var randomMultiple = document.getElementById("multiple").innerHTML =
+Math.floor(Math.random() * 10) + 1;
+var correctAnswer = randomMultiple*2;
+}
 </script>
   
  
@@ -46,14 +53,10 @@
 <div><!--variable section-->
    <script>  
 var score = 0;
-document.getElementById("answerChecker").onclick = function() {
+function answerChecker() {
 
 //user input variable, correct answer(random) variable
   var userAnswer = document.getElementById("userAnswer").value;
-    var randomMultiple = document.getElementById("multiple").innerHTML =
-Math.floor(Math.random() * 10) + 1;
-var correctAnswer = randomMultiple*2;
-
 
 //checks user input against correct answer
   if (userAnswer == (correctAnswer)) {
