@@ -11,11 +11,13 @@
 
 
 <script>
-<body onload="randomGenerator()"; <!--make this random number-->
+<body onload="randomGenerator()"; <!--make this random number--
+  
    function randomGenerator(){
     var randomMultiple = document.getElementById("multiple").innerHTML =
 Math.floor(Math.random() * 10) + 1;
 var correctAnswer = randomMultiple*2;
+     console.log (correctAnswer);
 }
 </script>
   
