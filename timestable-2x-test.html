@@ -27,10 +27,13 @@
   <hr>
 
   <p id="question"></p>
-  <p>what is 2x<span id="multiple"></span>?</p>  
-  <input id="userAnswer" type="number">
-  <button type="submit" id="answerChecker">submit</button>
-  <button onclick="randomGenerator()">new question</button>
+  <p>what is 2x<span id="multiple"></span>?</p>  <!--displays question and randomMultiple-->
+  
+  <input id="userAnswer" type="number"> <!--gets user input-->
+  
+  <button type="submit" id="answerChecker">submit</button> <!--activates check answer function-->
+  
+  <button onclick="randomGenerator()">new question</button> <!--generates new question-->
   <br>
   <br>
   
@@ -39,7 +42,7 @@
   <p>correct:</p>
  
   <br>
-  <p>correct answer is:</p><!--displays correct answer for testing-->
+  <p>the answer is:</p><!--displays correct answer for testing-->
   <script>
     document.getElementById("correctAnswer").innerHTML
   </script>
@@ -53,7 +56,7 @@
       function answerChecker() {
         //checks user input against correct answer
         if (userAnswer1 == correctAnswer) {
-          {document.getElementById("feedback").innerHTML = "yes";}
+          {document.getElementById("feedback").innerHTML = "yes";
         } else {
           document.getElementById("feedback").innerHTML = "no";}
        
