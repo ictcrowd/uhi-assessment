@@ -35,7 +35,13 @@
   <button onclick="randomGenerator()">new question</button>
   <br>
   <br>
-
+  
+<hr>
+<div> <!--displays-->
+  <p>correct:</p>
+  <div id="feedback">Ready</div><!--displays feedback-->
+</div>
+  
   <div><!--variable section-->
     <script>  
       function answerChecker() {
@@ -43,7 +49,7 @@
         var userAnswer1 = document.getElementById("userAnswer").value;
         
         //checks user input against correct answer
-        if (userAnswer1 == (correctAnswer)) {
+        if (userAnswer1 == (2)) {
           {document.getElementById("feedback").innerHTML = "yes";}
         } else {
           document.getElementById("feedback").innerHTML = "no";}
@@ -52,11 +58,7 @@
   </div>
 
 
-<hr>
-<div> <!--displays-->
-  <p>correct:</p>
-  <div id="feedback">Ready</div><!--displays feedback-->
-</div>
+
  
 </body>
 </html>
