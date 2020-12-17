@@ -37,7 +37,7 @@
 <hr>
 <div> <!--displays-->
   <p>correct:</p>
-  <div id="feedback">Ready</div><!--displays feedback-->
+  <span id="feedback"><!--displays feedback-->
   <script>
     document.write(feedback);
   </script>
@@ -47,12 +47,12 @@
   
   <div><!--variable section-->
     <script>  
-      var correctAnswer = document.getElementById("multiple").innerHTML = 2; //this multiplies the random number by 2 to make the correct answer
+      var correctAnswer = document.getElementById("multiple").innerHTML = randomNumber*2; //this multiplies the random number by 2 to make the correct answer
       var userAnswer1 = document.getElementById("userAnswer").value;    //gets user input variable, and fetches correct answer array
       
       function answerChecker() {
         //checks user input against correct answer
-        if (userAnswer1 == 2) {
+        if (userAnswer1 == correctAnswer) {
           {document.getElementById("feedback").innerHTML = "yes";}
         } else {
           document.getElementById("feedback").innerHTML = "no";}
