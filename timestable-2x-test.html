@@ -9,17 +9,20 @@
 </head>
 
 
-<body onload="randomGenerator()">;
+<body onload="randomGenerator()"; "question()">;
       <script>//random number generator and correct answer array 
+        var correctAnswer = randomMultiple*2; //this multiplies the random number by 2 to make the correct answer
         function randomGenerator(){
-          var score = 0;
-          var scoreArray = [score];
           var randomMultiple = document.getElementById("multiple").innerHTML =
-              (Math.floor(Math.random() * 10) + 1);
-          var multiplyMultiple = randomMultiple*2
-          var correctAnswer[multiplyMultiple];
+              (Math.floor(Math.random() * 10) + 1); //this creates random number between 1 and 10: the multiple
         }
   </script>
+  
+
+  <script>//creates score variable
+    var score = 0;
+  </script>
+ 
   
   <!--logo header-->
   <div class="header">
@@ -43,7 +46,6 @@
       function answerChecker() {
         //gets user input variable, and fetches correct answer array
         var userAnswer = document.getElementById("userAnswer").value;
-        var correctAnswer = [0]
         
         //checks user input against correct answer
         if (userAnswer == (correctAnswer)) {
@@ -53,9 +55,9 @@
           document.getElementById("feedback").innerHTML = "incorrect";
         }
         
-        //updates score, feedback and the correct answer
+        //updates score, feedback and the correct answer - do i need these?
         document.getElementById("score").innerHTML = score;
-        document.getElementById("correct").innerHTML = multiplyMultiple;
+        document.getElementById("correct").innerHTML = correctAnswer;
       }
     </script>
   </div>
