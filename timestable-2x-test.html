@@ -11,7 +11,7 @@
 
 <body onload="randomGenerator()"; "question()">;
       <script>//random number generator and correct answer array 
-        var correctAnswer = 2; //this multiplies the random number by 2 to make the correct answer
+       
         
         function randomGenerator(){
           var randomMultiple = document.getElementById("multiple").innerHTML =
@@ -44,6 +44,7 @@
   
   <div><!--variable section-->
     <script>  
+       var correctAnswer = 2; //this multiplies the random number by 2 to make the correct answer
       function answerChecker() {
         //gets user input variable, and fetches correct answer array
         var userAnswer1 = document.getElementById("userAnswer").value;    //do i even need to make this variable or can i check the input value against correctAnswer?
