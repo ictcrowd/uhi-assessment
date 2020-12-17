@@ -1,0 +1,113 @@
+<!DOCTYPE html>  
+
+  
+
+<head>  
+
+  
+
+  <link rel = "stylesheet"  
+
+  
+
+        type = "text/css"  
+
+  
+
+        href = "stylesheet.css"   
+
+  
+
+  </link>  
+
+  
+
+<a href="https://ictcrowd.github.io/uhi-assessment/timestable-home.html"><buttonhome onclick="myFunction()">home</button></a>  
+
+  
+
+   
+
+  
+
+</head>  
+
+  
+
+    
+
+  
+
+<body onLoad = "generateRandom()">  
+
+  <!--logo header-->  
+
+  <div class="header">  
+  <br>  
+    <img src="2x-test-logo.png" alt="2 times table logo" class="center">  
+    
+    </div>  
+    
+    <br>  
+    
+    <p> test your knowledge with this quiz:</p>  
+
+
+
+  <script>//random number
+  
+  var randomMultiple = 0;
+  function generateRandom()//this creates random number between 1 and 10:  
+  {
+    randomMultiple = Math.floor(Math.random() * 10) + 1);
+    twoMultiple = 2;
+    
+    document.getElementById("multiple").innerHTML = randomMultiple;
+    document.getElementById("two").innerHTML = twoMultiple;
+  }
+  
+  function checkAnswer()
+  {
+    answer = document.getElementById("userAnswer").value;
+    if (answer ==(twoMultiple * randomMultiple))
+    {
+      document.getElementById("feedback").innerHTML = "correct";
+      }
+      else
+      {
+        document.getElementById("feedback").innerHTML = "incorrect";
+      }
+  }
+  generateRandom();
+  
+  </script>   
+
+  
+<div id = "question">
+  
+  <p>What is:</p>
+  <span id = randomMultiple> - </span> x <span id = twoMultiple> - </span> =
+  <br>
+  <br>
+  <input type = "number" id = "userAnswer" name = "number1" />
+  <input type = "button" onClick = "checkAnswer()" value = "check" />
+  <br>
+  <br>
+  <span id = "feedback">ready</span>
+
+</div>
+    
+
+</body>  
+
+</html>  
+
+  
+
+  
+
+  
+
+ 
+
+ 
