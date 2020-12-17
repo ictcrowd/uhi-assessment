@@ -11,7 +11,7 @@
 
 <body onload="randomGenerator()"; "question()">;
       <script>//random number generator and correct answer array 
-        var correctAnswer = randomMultiple*2; //this multiplies the random number by 2 to make the correct answer
+        var correctAnswer = 2; //this multiplies the random number by 2 to make the correct answer
         
         function randomGenerator(){
           var randomMultiple = document.getElementById("multiple").innerHTML =
@@ -25,7 +25,7 @@
   <img src="2x-test-logo.png" alt="2 times table logo" class="center">
   </div>
   <br>
- <p> test your knowledge with this quiz;</p>
+ <p> test your knowledge with this quiz:</p>
   <hr>
 
   <p id="question"></p>
@@ -44,9 +44,9 @@
         
         //checks user input against correct answer
         if (userAnswer1 == (correctAnswer)) {
-          {document.getElementById("feedback").innerHTML = "correct";}
+          {document.getElementById("feedback").innerHTML = "yes";}
         } else {
-          document.getElementById("feedback").innerHTML = "incorrect";}
+          document.getElementById("feedback").innerHTML = "no";}
       }
     </script>
   </div>
@@ -54,7 +54,7 @@
 
 <hr>
 <div> <!--displays-->
-  <p>answer feedback:</p>
+  <p>correct:</p>
   <div id="feedback">Ready</div><!--displays feedback-->
 </div>
  
