@@ -11,7 +11,7 @@
 
 <body onload="randomGenerator()"; "question()";>
   <script>//random number generator and correct answer array 
-    function randomGenerator(){
+    function randomGenerator(){//how do i get the randomMultiple variable out of this function to generate correctAnswer????????
           var randomMultiple = document.getElementById("multiple").innerHTML =
               (Math.floor(Math.random() * 10) + 1); //this creates random number between 1 and 10: the multiple
         }
@@ -37,16 +37,14 @@
 <hr>
 <div> <!--displays-->
   <p>correct:</p>
-  <script>
-    document.write(feedback);
-  </script>
+ 
   <br>
   <p>correct answer is:</p><!--displays correct answer for testing-->
 </div>
   
   <div><!--variable section-->
     <script>  
-      var correctAnswer = document.getElementById("multiple").innerHTML = randomMultiple*2; //this multiplies the random number by 2 to make the correct answer
+      var correctAnswer = document.getElementById("multiple").innerHTML = 2; //this multiplies the random number by 2 to make the correct answer
       var userAnswer1 = document.getElementById("userAnswer").value;    //gets user input variable, and fetches correct answer array
       
       function answerChecker() {
@@ -55,6 +53,7 @@
           {document.getElementById("feedback").innerHTML = "yes";}
         } else {
           document.getElementById("feedback").innerHTML = "no";}
+       
       }
       document.write(feedback);
       document.write(correctAnswer);
