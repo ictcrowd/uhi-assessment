@@ -1,64 +1,64 @@
 <!DOCTYPE html>
 <head>
-  <link rel = "stylesheet"
+  <link> rel = "stylesheet"
         type = "text/css"
         href = "stylesheet.css" 
-        </link>
-  <a href="https://ictcrowd.github.io/uhi-assessment/timestable-home.html"><buttonhome onclick="myFunction()">home</button></a>
+  </link>
+<a href="https://ictcrowd.github.io/uhi-assessment/timestable-home.html"><buttonhome onclick="myFunction()">home</button></a>
 
 </head>
 
 
-<body onload="randomGenerator()"; <!--make this random number--
-<script>//random number generator and correct answer array 
-   function randomGenerator(){
-     var randomMultiple = document.getElementById("multiple").innerHTML =
-        (Math.floor(Math.random() * 10) + 1);
-     var multiplyMultiple = randomMultiple*2
-     var correctAnswer[multiplyMultiple];
-   }
-</script>
+<body onload="randomGenerator()">;
+      <script>//random number generator and correct answer array 
+        function randomGenerator(){
+          var score = 0;
+          var scoreArray = [score];
+          var randomMultiple = document.getElementById("multiple").innerHTML =
+              (Math.floor(Math.random() * 10) + 1);
+          var multiplyMultiple = randomMultiple*2
+          var correctAnswer[multiplyMultiple];
+        }
+  </script>
   
- 
- <!--logo header-->
-<div class="header">
+  <!--logo header-->
+  <div class="header">
   <br>
   <img src="2x-test-logo.png" alt="2 times table logo" class="center">
-</div>
-  </h1>
+  </div>
   <br>
-   test your knowledge with this quiz:
+  test your knowledge with this quiz;
   <hr>
 
-<p id="question"></p>
-<p>what is 2x<span id="multiple"></span>?</p>  
-<input id="userAnswer" type="number">
-<button type="submit" id="answerChecker">submit</button>
-<br>
-<br>
+  <p id="question"></p>
+  <p>what is 2x<span id="multiple"></span>?</p>  
+  <input id="userAnswer" type="number">
+  <button type="submit" id="answerChecker">submit</button>
+  <buttontest onclick="randomGenerator()">new question</buttontest>
+  <br>
+  <br>
 
-<div><!--variable section-->
-  <script>  
-    var score = 0;
-    function answerChecker() {
-
-      //gets user input variable, and fetches correct answer array
-      var userAnswer = document.getElementById("userAnswer").value;
-      var correctAnswer = [0]
- 
-      //checks user input against correct answer
-      if (userAnswer == (correctAnswer)) {
-        {document.getElementById("feedback").innerHTML = "correct";}
-        score++;
-      } else {
-        document.getElementById("feedback").innerHTML = "incorrect";
+  <div><!--variable section-->
+    <script>  
+      function answerChecker() {
+        //gets user input variable, and fetches correct answer array
+        var userAnswer = document.getElementById("userAnswer").value;
+        var correctAnswer = [0]
+        
+        //checks user input against correct answer
+        if (userAnswer == (correctAnswer)) {
+          {document.getElementById("feedback").innerHTML = "correct";}
+          score++;
+        } else {
+          document.getElementById("feedback").innerHTML = "incorrect";
+        }
+        
+        //updates score, feedback and the correct answer
+        document.getElementById("score").innerHTML = score;
+        document.getElementById("correct").innerHTML = multiplyMultiple;
       }
-      //updates score, feedback and the correct answer
-      document.getElementById("score").innerHTML = score;
-      document.getElementById("correct").innerHTML = correctAnswer;
-    }
-  </script>
-</div>
+    </script>
+  </div>
 
 
 <hr>
