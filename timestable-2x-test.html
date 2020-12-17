@@ -105,18 +105,16 @@
 
 <input type="number" id="userNumber" value="2">
 
-<p>Click the button to get the number of the number field.</p>
 
-<button onclick="userInput()">submitt</button>
+<button onclick="userInput()">submit</button>
 
 
 
 <p id="showInput"></p>
-
 <script>
 function userInput() {
-  var x = document.getElementById("userNumber").value;
-  document.getElementById("showInput").innerHTML = x;
+  var userAnswer = document.getElementById("userNumber").value;
+  document.getElementById("showInput").innerHTML = userAnswer;
 }
 </script>
 
@@ -181,21 +179,14 @@ function userInput() {
 
     <script>    
 
-      var correctAnswer1 = randomMultiple*2; //this multiplies the random number by 2 to make the              correct answer  
+      var correctAnswer1 = 2; //this multiplies the random number by 2 to make the              correct answer  
 
-document.getElementById(" test ").innerHTML 
-
-        var userAnswer1 = document.getElementById("userAnswer").value;   
-
-document.getElementById(" test2 ").innerHTML 
-
- 
-
+      document.getElementById(" test ").innerHTML 
  
 
       function answerChecker() {       //checks user input against correct answer  
 
-        if (x == 2) { 
+        if (userAnswer == 2) { 
 
           document.getElementById("feedback").innerHTML = "yes";  
 
