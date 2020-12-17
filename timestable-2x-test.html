@@ -10,10 +10,8 @@
 
 
 <body onload="randomGenerator()"; "question()";>
-      <script>//random number generator and correct answer array 
-document.write(correctAnswer);
-        
-        function randomGenerator(){
+  <script>//random number generator and correct answer array 
+    function randomGenerator(){
           var randomMultiple = document.getElementById("multiple").innerHTML =
               (Math.floor(Math.random() * 10) + 1); //this creates random number between 1 and 10: the multiple
         }
@@ -54,6 +52,7 @@ document.write(correctAnswer);
         } else {
           document.getElementById("feedback").innerHTML = "no";}
       }
+      document.write(correctAnswer);
     </script>
   </div>
 
