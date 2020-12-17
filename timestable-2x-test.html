@@ -15,9 +15,8 @@
   
    function randomGenerator(){
     var randomMultiple = document.getElementById("multiple").innerHTML =
-Math.floor(Math.random() * 10) + 1;
-var correctAnswer = randomMultiple*2;
-     console.log (correctAnswer);
+(Math.floor(Math.random() * 10) + 1)*2;
+var correctAnswer[randomMultiple];
 }
 </script>
   
@@ -59,7 +58,7 @@ function answerChecker() {
 
 //user input variable, correct answer(random) variable
   var userAnswer = document.getElementById("userAnswer").value;
-
+var name = correctAnswer[0]
 //checks user input against correct answer
   if (userAnswer == (correctAnswer)) {
   {document.getElementById("feedback").innerHTML = "correct";}
