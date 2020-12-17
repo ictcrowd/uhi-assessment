@@ -99,31 +99,27 @@
   <p>what is 2x<span id="multiple"></span>?</p>  <!--displays question and randomMultiple-->  
 
   
-
-  <script>  
-
-    
-
-  </script>  
-
+  
   
 <!--gets user input-->  
 
-   
+<input type="number" id="myNumber" value="2">
 
-  <input type="number" id="myNumber" value="2">
+<p>Click the button to get the number of the number field.</p>
 
 <button onclick="userInput()">submit</button>
+
 
 <p id="userNumber"></p>
 
 <script>
-function myFunction() {
+function userInput() {
   var x = document.getElementById("myNumber").value;
   document.getElementById("userNumber").innerHTML = x;
 }
 </script>
 
+  
    
 
   <button onclick="randomGenerator()">new question</button> <!--generates new question-->  
@@ -198,7 +194,7 @@ document.getElementById(" test2 ").innerHTML
 
       function answerChecker() {       //checks user input against correct answer  
 
-        if (userAnswer1 == correctAnswer1) { 
+        if (x == 2) { 
 
           document.getElementById("feedback").innerHTML = "yes";  
 
