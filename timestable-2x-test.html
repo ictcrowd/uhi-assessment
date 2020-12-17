@@ -16,13 +16,7 @@
           var randomMultiple = document.getElementById("multiple").innerHTML =
               (Math.floor(Math.random() * 10) + 1); //this creates random number between 1 and 10: the multiple
         }
-  </script>
-  
-
-  <script>//creates score variable
-    var score = 0;
-  </script>
- 
+  </script> 
   
   <!--logo header-->
   <div class="header">
@@ -50,29 +44,17 @@
         //checks user input against correct answer
         if (userAnswer == (correctAnswer)) {
           {document.getElementById("feedback").innerHTML = "correct";}
-          score++;
         } else {
-          document.getElementById("feedback").innerHTML = "incorrect";
-        }
-        
-        //updates score, feedback and the correct answer - do i need these?
-        document.getElementById("score").innerHTML = score;
-        document.getElementById("correct").innerHTML = correctAnswer;
+          document.getElementById("feedback").innerHTML = "incorrect";}
       }
     </script>
   </div>
 
 
 <hr>
-<div> displays
-  <p>your score:
-  <div id="score">score</div><!--displays score-->
-  <br>
+<div> <!--displays-->
   <p>answer feedback:</p>
   <div id="feedback">Ready</div><!--displays feedback-->
-  <br>
-  <p>the correct answer is:</p>
-  <div id="correct">blank</div><!--displays correct asnwer-->
 </div>
  
 </body>
