@@ -12,6 +12,7 @@
 <body onload="randomGenerator()"; "question()">;
       <script>//random number generator and correct answer array 
         var correctAnswer = randomMultiple*2; //this multiplies the random number by 2 to make the correct answer
+        
         function randomGenerator(){
           var randomMultiple = document.getElementById("multiple").innerHTML =
               (Math.floor(Math.random() * 10) + 1); //this creates random number between 1 and 10: the multiple
@@ -39,10 +40,10 @@
     <script>  
       function answerChecker() {
         //gets user input variable, and fetches correct answer array
-        var userAnswer = document.getElementById("userAnswer").value;
+        var userAnswer1 = document.getElementById("userAnswer").value;
         
         //checks user input against correct answer
-        if (userAnswer == (correctAnswer)) {
+        if (userAnswer1 == (correctAnswer)) {
           {document.getElementById("feedback").innerHTML = "correct";}
         } else {
           document.getElementById("feedback").innerHTML = "incorrect";}
