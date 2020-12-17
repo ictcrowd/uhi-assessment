@@ -49,18 +49,18 @@
   
   <p>the answer is:</p><!--displays correct answer for testing-->
   <script>
-    document.getElementById("correctAnswer").value
+   <p  id="correctAnswer" > </p>
   </script>
 </div>
   
   <div><!--variable section-->
     <script>  
-      var correctAnswer = 2; //this multiplies the random number by 2 to make the correct answer
+      var correctAnswer1 = 2; //this multiplies the random number by 2 to make the correct answer
       var userAnswer1 = document.getElementById("userAnswer").value;    //gets user input variable, and fetches correct answer array
       
       function answerChecker() {
         //checks user input against correct answer
-        if (userAnswer1 == correctAnswer) 
+        if (userAnswer1 == correctAnswer1) 
         {document.getElementById("feedback").innerHTML = "yes";} 
         else 
         {document.getElementById("feedback").innerHTML = "no";}
