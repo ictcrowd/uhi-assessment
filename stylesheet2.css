@@ -1,7 +1,7 @@
 /* stylesheet.css */
 body {background: white}
         h1 {text-align: center; font-family: consolas}
-         p {color: black;  font-family: consolas
+         p {color: black;  font-family: consolas; font-size:50px
          }
    .center {
   display: block;
@@ -20,7 +20,7 @@ button {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 30px;
+  font-size: 50px;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -37,7 +37,7 @@ button10 {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 30px;
+  font-size: 50px;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -54,7 +54,7 @@ buttonsearch {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
+  font-size: 50px;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -73,7 +73,7 @@ buttonsearch:hover{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 50px;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -93,7 +93,7 @@ buttonhome:hover{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 50px;
   margin: 4px 2px;
   cursor: pointer;
 }
