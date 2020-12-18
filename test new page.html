@@ -11,26 +11,7 @@
   
   <a href="https://ictcrowd.github.io/uhi-assessment/timestable-home.html"><buttonhome onclick="myFunction()">home</button></a>  
 
-</head>  
-
-
-<body onLoad = "generateRandom()">  
-
-  <!--logo header-->  
-
-  <div class="header">  
-  <br>  
-    <img src="2x-test-logo.png" alt="2 times table logo" class="center">  
-    
-  </div>  
-    
-  <br>  
-    
-  <p> test your knowledge with this quiz:</p>  
-
-
-
-  <script>//random number
+   <script>//random number
   
   var randomMultiple = 0;
   var twoMultiple  = 0;
@@ -58,20 +39,41 @@
   }
   
   </script>   
+  
+</head>  
 
- generateRandom();
+
+<body onLoad = "generateRandom()">  
+
+  <!--logo header-->  
+
+  <div class="header">  
+  <br>  
+    <img src="2x-test-logo.png" alt="2 times table logo" class="center">  
+    
+  </div>  
+    
+  <br>  
+    
+  <p> test your knowledge with this quiz:</p>  
+
+
+
+ 
+
+
   
 <div id = "question">
   
   <p>What is:</p>
-  <span id = numberTwo> - </span> x <span id = multiple> - </span> = <!--displays two multiple variables -->
+  <div id = numberTwo> - </div> x <div id = multiple> - </div> = <!--displays two multiple variables -->
   <br>
   <br>
   <input type = "number" id = "userAnswer" name = "number1" /> <!--gets user input-->
   <input type = "button" onClick = "checkAnswer()" value = "check" /> <!-- runs function that checks user input against correct answer-->
   <br>
   <br>
-  <span id = "feedback">ready</span> <!-- fetches and displays feedback from if statement-->
+  <div id = "feedback">ready</div> <!-- fetches and displays feedback from if statement-->
 
 </div>
 
